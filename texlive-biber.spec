@@ -1,3 +1,9 @@
+# revision 23715
+# category Package
+# catalog-ctan /biblio/biber
+# catalog-date 2011-08-24 12:15:15 +0200
+# catalog-license artistic
+# catalog-version 0.9.5
 Name:		texlive-biber
 Version:	0.9.5
 Release:	1
@@ -32,6 +38,7 @@ from an earlier (now apparently moribund) project called
 #- source
 %doc %{_texmfdistdir}/source/bibtex/biber/README
 %doc %{_texmfdistdir}/source/bibtex/biber/biblatex-biber.tar.gz
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -41,4 +48,6 @@ from an earlier (now apparently moribund) project called
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf-dist %{buildroot}%{_datadir}
+cp -fpar texmf %{buildroot}%{_datadir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
