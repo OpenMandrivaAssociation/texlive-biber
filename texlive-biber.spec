@@ -48,6 +48,6 @@ from an earlier (now apparently moribund) project called
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_tlpkgobjdir}
 cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
