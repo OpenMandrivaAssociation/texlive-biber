@@ -1,4 +1,4 @@
-# revision 23715
+# revision 24595
 # category Package
 # catalog-ctan /biblio/biber
 # catalog-date 2011-08-24 12:15:15 +0200
@@ -6,7 +6,7 @@
 # catalog-version 0.9.5
 Name:		texlive-biber
 Version:	0.9.5
-Release:	1
+Release:	2
 Summary:	A BibTeX replacement for users of biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/biber
@@ -19,6 +19,7 @@ BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires:	texlive-biber.bin
 Conflicts:	texlive-texmf <= 20110705-3
+Conflicts:	texlive-doc <= 20110705-3
 Conflicts:	texlive-source <= 20110705-3
 
 %description
@@ -35,8 +36,10 @@ from an earlier (now apparently moribund) project called
 #-----------------------------------------------------------------------
 %files
 %doc %{_texmfdistdir}/doc/bibtex/biber/biber.pdf
+%doc %{_texmfdistdir}/doc/bibtex/biber/utf8-macro-map.html
 #- source
 %doc %{_texmfdistdir}/source/bibtex/biber/README
+%doc %{_texmfdistdir}/source/bibtex/biber/README.TEXLIVE
 %doc %{_texmfdistdir}/source/bibtex/biber/biblatex-biber.tar.gz
 %doc %{_tlpkgobjdir}/*.tlpobj
 
