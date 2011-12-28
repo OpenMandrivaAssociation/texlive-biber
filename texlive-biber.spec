@@ -36,7 +36,6 @@ from an earlier (now apparently moribund) project called
 #- source
 %doc %{_texmfdistdir}/source/bibtex/biber/biblatex-biber.tar.gz
 %doc %{_texmfdistdir}/source/bibtex/biber/utf8-macro-map.html
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -47,5 +46,3 @@ from an earlier (now apparently moribund) project called
 %install
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
