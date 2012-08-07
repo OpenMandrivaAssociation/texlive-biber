@@ -1,11 +1,11 @@
-# revision 25858
+# revision 27291
 # category Package
 # catalog-ctan /biblio/biber
-# catalog-date 2012-04-01 20:46:39 +0200
+# catalog-date 2012-07-31 19:56:52 +0200
 # catalog-license artistic
-# catalog-version 0.9.9
+# catalog-version 1.1
 Name:		texlive-biber
-Version:	0.9.9
+Version:	1.1
 Release:	1
 Summary:	A BibTeX replacement for users of biblatex
 Group:		Publishing
@@ -17,7 +17,6 @@ Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.source.tar.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Requires:	texlive-biber.bin
 
 %description
 Biber is a BibTeX replacement for users of biblatex. Biber
@@ -34,6 +33,7 @@ from an earlier (now apparently moribund) project called
 %files
 %doc %{_texmfdistdir}/doc/bibtex/biber/biber.pdf
 #- source
+%doc %{_texmfdistdir}/source/bibtex/biber/Changes
 %doc %{_texmfdistdir}/source/bibtex/biber/biblatex-biber.tar.gz
 %doc %{_texmfdistdir}/source/bibtex/biber/utf8-macro-map.html
 
