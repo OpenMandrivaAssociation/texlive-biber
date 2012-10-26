@@ -1,11 +1,11 @@
-# revision 27291
+# revision 27439
 # category Package
 # catalog-ctan /biblio/biber
-# catalog-date 2012-07-31 19:56:52 +0200
+# catalog-date 2012-08-17 18:31:30 +0200
 # catalog-license artistic
-# catalog-version 1.1
+# catalog-version 1.2
 Name:		texlive-biber
-Version:	1.1
+Version:	1.2
 Release:	1
 Summary:	A BibTeX replacement for users of biblatex
 Group:		Publishing
