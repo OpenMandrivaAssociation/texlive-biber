@@ -6,7 +6,7 @@
 # catalog-version 1.2
 Name:		texlive-biber
 Version:	1.2
-Release:	1
+Release:	2
 Summary:	A BibTeX replacement for users of biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/biber
