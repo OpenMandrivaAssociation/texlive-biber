@@ -1,12 +1,12 @@
-# revision 32012
+# revision 33828
 # category Package
 # catalog-ctan /biblio/biber
-# catalog-date 2013-10-27 19:01:04 +0100
+# catalog-date 2014-02-26 23:03:13 +0100
 # catalog-license artistic
 # catalog-version 1.8
 Name:		texlive-biber
 Version:	1.8
-Release:	6
+Release:	7
 Summary:	A BibTeX replacement for users of biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/biber
