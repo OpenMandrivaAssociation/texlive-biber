@@ -6,7 +6,7 @@
 # catalog-version 1.8
 Name:		texlive-biber
 Version:	1.8
-Release:	8
+Release:	9
 Summary:	A BibTeX replacement for users of biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/biber
