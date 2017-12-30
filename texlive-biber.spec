@@ -1,5 +1,5 @@
 Name:		texlive-biber
-Version:	2.9
+Version:	2.10
 Release:	1
 Summary:	A BibTeX replacement for users of biblatex
 Group:		Publishing
