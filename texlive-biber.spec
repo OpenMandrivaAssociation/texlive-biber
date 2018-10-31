@@ -1,6 +1,6 @@
 Name:		texlive-biber
 Version:	2.11
-Release:	1
+Release:	2
 Summary:	A BibTeX replacement for users of biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/biber
