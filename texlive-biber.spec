@@ -5,9 +5,9 @@ Summary:	A BibTeX replacement for users of biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/biber
 License:	ARTISTIC
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.r64367.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.doc.r64367.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.source.r64367.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
