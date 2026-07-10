@@ -1,41 +1,30 @@
-Name:		texlive-biber
-Version:	70724
-Release:	1
-Summary:	A BibTeX replacement for users of biblatex
+%global tl_name biber
+%global tl_revision 79618
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	2.21
+Release:	%{tl_revision}.1
+Summary:	A BibTeX replacement for users of BibLaTeX
 Group:		Publishing
-URL:		https://www.ctan.org/tex-archive/biblio/biber
-License:	ARTISTIC
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.source.r%{version}.tar.xz
+URL:		https://www.ctan.org/tex-archive/biblio/biber/base
+License:	artistic2
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biber.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+%texlive_base_requires
+Requires:	texlive(biber.bin)
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-Biber is a BibTeX replacement for users of biblatex. Biber
-supports full UTF-8, can (re)-encode input and output, supports
-highly configurable sorting, dynamic bibliography sets and many
-other features. The CTAN distribution offers a compressed tar
-archive of the sources, etc., together with "binary"
-distributions for a variety of platforms. Note: on SourceForge
-biber is formally named "biblatex-biber", to distinguish it
-from an earlier (now apparently moribund) project called
-"biber".
+Biber is a BibTeX replacement for users of BibLaTeX. Biber supports full
+UTF-8, can (re)-encode input and output, supports highly configurable
+sorting, dynamic bibliography sets and many other features. The CTAN
+distribution offers a compressed tar archive of the sources, etc.,
+together with "binary" distributions for a variety of platforms. Note:
+on SourceForge biber is formally named "biblatex-biber", to distinguish
+it from an earlier (now apparently moribund) project called "biber".
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/bibtex/biber
-#- source
-%doc %{_texmfdistdir}/source/bibtex/biber
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf-dist %{buildroot}%{_datadir}
